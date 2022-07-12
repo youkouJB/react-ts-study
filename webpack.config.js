@@ -43,6 +43,7 @@ module.exports = {
     static: path.join(__dirname, '/dist'),
     open: true,
     port: 8888,
+    historyApiFallback: true,
   },
   //pluginの設定
   plugins: [
