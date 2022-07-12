@@ -14,6 +14,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
   "bugs": {
     "url": "https://github.com/youkouJB/react-ts/issues"
   },
