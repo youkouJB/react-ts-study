@@ -1,5 +1,6 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   //モードをdevelopment、production、noneから設定（必須）
@@ -21,7 +22,15 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader',
-      }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+        ],
+      },
     ]
   },
   //importの際に省略する対象の拡張子を配列で指定
@@ -40,6 +49,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: 'index.html',
-    })
+    }),
+    new MiniCssExtractPlugin({
+      filename: './src/css/index.css',
+    }),
   ]
 }
