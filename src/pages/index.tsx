@@ -8,33 +8,30 @@ const Top = () => {
       <Link to="/about">
         <div className="mt-10">
           <div className="flex justify-center">
-            <div className="py-16 w-9/12 shadow-lg rounded-lg bg-white">
+            <div className="py-16 w-9/12 shadow-lg rounded-lg bg-white transition duration-300 hover:bg-blue-100 hover:text-white">
               <h2 className="">ABOUT</h2>
             </div>
           </div>
         </div>
       </Link>
-      <div className="mt-10">
-        <div className="flex justify-center">
-          <div className="py-16 w-9/12 shadow-lg rounded-lg bg-white">
-            <h2 className="">TEST</h2>
+      <Link to="/count">
+        <div className="mt-10">
+          <div className="flex justify-center">
+            <div className="py-16 w-9/12 shadow-lg rounded-lg bg-white transition duration-300 hover:bg-pink-100 hover:text-white">
+              <h2 className="">COUNT</h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="mt-10">
-        <div className="flex justify-center">
-          <div className="py-16 w-9/12 shadow-lg rounded-lg bg-white">
-            <h2 className="">TEST</h2>
+      </Link>
+      <Link to="/test">
+        <div className="mt-10">
+          <div className="flex justify-center">
+            <div className="py-16 w-9/12 shadow-lg rounded-lg bg-white transition duration-300 hover:bg-yellow-100 hover:text-white">
+              <h2 className="">TEST</h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="mt-10">
-        <div className="flex justify-center">
-          <div className="py-16 w-9/12 shadow-lg rounded-lg bg-white">
-            <h2 className="">TEST</h2>
-          </div>
-        </div>
-      </div>
+      </Link>
     </div>
   )
 }
