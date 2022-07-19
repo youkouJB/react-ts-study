@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build:css": "npx tailwindcss build ./src/css/index.css -o ./dist/src/index.css"
   },
   "repository": {
     "type": "git",

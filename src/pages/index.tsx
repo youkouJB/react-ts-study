@@ -32,6 +32,15 @@ const Top = () => {
           </div>
         </div>
       </Link>
+      <Link to="/todo">
+        <div className="mt-10">
+          <div className="flex justify-center">
+            <div className="py-16 w-9/12 shadow-lg rounded-lg bg-white transition duration-300 hover:bg-green-100 hover:text-white">
+              <h2 className="">TODO</h2>
+            </div>
+          </div>
+        </div>
+      </Link>
     </div>
   )
 }
